@@ -103,7 +103,7 @@ const App = () => {
             {
                 items.map((item)=>{ 
                     return(
-                        <div className='menu-item' key={item.id}>
+                        <div className='menu-item' key={item.id} data-test-id={`menu-item-${item.category}`}>
                             <img src={item.img} alt={item.title}/>
                             <div className='item-info'>
                                 <div className='item-header'>   
